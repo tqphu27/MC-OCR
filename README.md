@@ -1,1 +1,1 @@
-# MC-OCR
+# MC-OCR - Đang Update
