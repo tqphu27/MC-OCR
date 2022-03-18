@@ -15,14 +15,14 @@
   **Depthwise Separable Convolutions
     Mô hình chia CNN cơ bản ra làm hai phần: Deepwise Convolution và Pointwise Convolution.
     
-    [](https://user-images.githubusercontent.com/90370260/158927771-09873e0b-1f72-4d47-9805-528c24fe8e77.png)
+    <img src="https://user-images.githubusercontent.com/90370260/158927771-09873e0b-1f72-4d47-9805-528c24fe8e77.png">
   
   Thay vì nhân tất cả như CNN thì mô hình được tách ra.
   Đầu tiên, vaanxx thực hiện như standard CNN, thực hiện nhân tích chập 5x5x10 với bộ filter giờ chỉ còn là 1x3x3, tương tự 5 filter như thế, stack nó lại, kết quả thu được output 5x10x10.
   
   **Pointwise Convolution**: Ở bước pointwise này, ta chỉ sử dụng bộ có kích thước là 1x1. Đồng thời số lượng bộ lọc bằng số channel mà ta muốn thu được. Ta muốn tăng lên 64 channel, vậy hãy sử dụng 64 bộ filters.
   
-  [](https://user-images.githubusercontent.com/90370260/158928256-42ca3daf-84ca-4fae-bdaa-3afdb986a43f.png)
+  <img src="https://user-images.githubusercontent.com/90370260/158928256-42ca3daf-84ca-4fae-bdaa-3afdb986a43f.png">
 
 2. Rotation corector
 3. Textline rotation
