@@ -28,3 +28,19 @@
 3. Textline rotation
 4. Text classifier
 5. Key information extraction
+ Có rất nhiều mô hình với các hướng tiếp cận khác nhau trong bài toán trích xuất thông tin. Hướng tiếp cận đơn giản nhất là sử dụng Text Classification để phân loại ra những thông tin nào thuộc lớp nào.
+ <img src="https://images.viblo.asia/full/b8fdd6ac-ddfa-4160-b573-b323836c190d.png">
+ + Phương pháp a: Sử dụng đầu vào là text và box chứa text => dùng các công thức, mẫu chuẩn để giải quyết bài toán.
+ + Phương pháp b: Sử dụng đầu vào là text và dụng một mô hình Encoder gồm các layer BiLSTM và Decoder sử dụng CRF để dự đoán thực thể đó.
+ + Phương pháp c: sử dụng đầu vào là text và box chứa text đó đi qua một mô hình Encoder gồm các layer BiLSTM sau đó đưa qua một mô hình Graph gọi là GCN cuối cùng đưa qua mạng Decoder bao gồm cả BiLSTM và CRF để dự đoán ra thực thể đó.
+ + Phương pháp d: Nhận đầu vào là text, box chứa text và cả image nữa . Đầu tiên cho qua một mô hình Encoder gồm (CNN+ Transformer) sau đó cho qua mô hình Graph gọi là GLCN rồi cuối cùng đưa vào mô hình Decoder bao gồm (BiLSTM+CRF) để đưa ra dự đoán cho thực thể đó. => PICK
+ 
+  Sử dụng phương pháp d để giải quyết bài toán => Processing Key Information Extraction from Documents using Improved Graph Learning-Convolutional Networks.
+  
+  Pick sử dụng 3 modul chính:
+   + Encoder: Sử dụng mô hình Transformer để trích xuất đặc trưng từ văn bản và sử dụng một mạng CNN để trích xuất đặc trưng từ ảnh. => Kết hợp với text embbedings và image embbedings lại thành vector biểu diễn X thể hiện khả năng biểu diễn text và image chứa text đó. => X được xem là đầu vào của Graph mô-đun.
+   + Graph mô-đun: sử dụng một mạng GCN để làm giàu khả năng biểu diễn giữa các node. Việc các thông tin cần trích xuaatss có vị trí và nội dung khác nhau nó không cục bộ và không theo thứ tự nên việc sử dụng Graph giúp mô hình có thể học được khả năng biểu diễn mỗi tương quan giữa chúng về khoảng cách và vị trí trong văn bản.
+   + Decoder: Sau khi kết hợp mô đun Graph để làm giàu thông tin thì mô hình kết hợp thông tin đó và cả thông tin do mô đun Encoder sunh ra để đưa vào mô đun Decoder để nhận dạng vầ phân loại chúng. Pick sử dụng BiLSTM layer và CRF layer.
+
+  <src img="https://images.viblo.asia/full/4cbfec74-7277-4ce0-8473-47ef0c343dc9.png">
+   + 
