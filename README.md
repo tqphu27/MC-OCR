@@ -22,7 +22,7 @@
   
   **Pointwise Convolution**: Ở bước pointwise này, ta chỉ sử dụng bộ có kích thước là 1x1. Đồng thời số lượng bộ lọc bằng số channel mà ta muốn thu được. Ta muốn tăng lên 64 channel, vậy hãy sử dụng 64 bộ filters.
   
-  <img src="https://user-images.githubusercontent.com/90370260/158928256-42ca3daf-84ca-4fae-bdaa-3afdb986a43f.png">
+  [Pick]<"https://user-images.githubusercontent.com/90370260/158928256-42ca3daf-84ca-4fae-bdaa-3afdb986a43f.png">
 
 2. Rotation corector
 3. Textline rotation
