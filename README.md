@@ -50,4 +50,15 @@
  => X được sử dụng làm input X0 của Graph Module bằng cách qua một layer pooling.
  
  ** Graph mô-đun**
- - Mô hình sử dụng một graph neural network để mô hình háo bối cảnh toàn cục và các thông tin có cấu trúc không tuần tự để xác định trước loại cạnh và ma trận kề của đồ thị. cạnh là việc các nodes/text segments kết nối với nhau theo chiều 
+  Mô hình sử dụng một graph neural network để mô hình hóa bối cảnh toàn cục và các thông tin có cấu trúc không tuần tự để xác định trước loại cạnh và ma trận kề của đồ thị. cạnh là việc các nodes/text segments kết nối với nhau theo chiều ngang hay dọc. 
+  Ma trận kề được xác định dựa trên 4 loại cạnh: "trái sang phải",....
+  Pick sử dụng kết hợp phát triển mạng Graph learning-convolutional dựa trên mô hình Graph để học một soft adjacent matrix thay vì hard adjacent matrix.
+ => giảm thiểu thao tác tổng hợp thông tin nút dư thừa vô ích của Graph module.
+  Gồm hai phần chính:
+    - Graph Learning: Nhận đầu vào là một vector V, có các giá trị Vi là node thứ i trong đồ thị và khởi tạo giastrij V bằng với X0, Graph Module sinh ra một ma trận kề A biểu diễn mối quan hệ giữa 2 nodes đầu tiên cho qua Graph Learning và ma trận H được trích xuất cho mỗi node Vi sử dụng một mạng multi-layer perceptron(MLP), nhận đầu vào là V và vector α embbeding từ mối quan hệ tương ứng giữa các nodes. Sau đó đưa ma trận H qua mạng Graph Convolutional và biểu diễn chúng thành V'.
+  -  Graph Convolutional: GNN có nhiệm vụ biểu diễn thông tin và bố cục của các nodes. Biểu diễn garph convolutional theo node-edge-node(vi,ại,vj). Sau đó tính ra các đặc trưng ẩn từ graph sử dụng bộ ba node-edge-node trên. Cuối cùng, tổng hợp thông tin từ các đặc trưng ẩn và ma trận kề A sử dụng graph convolutional để cập nhập các node.
+ 
+ **Decoder**
+  Nhận đầu vào là sự kết hợp giữa đầu ra của Encoder và Graph Module. Cho qua một mạng BiLSTM layer và CRF layer để phân loại chúng. 
+  Cuối cùng mô hình sử dụng 2 hàm los để tối ưu đồng thời chúng, đó là loss của Graph learning và CRF loss.
+ 
