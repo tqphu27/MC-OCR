@@ -43,4 +43,11 @@
    + Decoder: Sau khi kết hợp mô đun Graph để làm giàu thông tin thì mô hình kết hợp thông tin đó và cả thông tin do mô đun Encoder sunh ra để đưa vào mô đun Decoder để nhận dạng vầ phân loại chúng. Pick sử dụng BiLSTM layer và CRF layer.
 
   <src img="https://images.viblo.asia/full/4cbfec74-7277-4ce0-8473-47ef0c343dc9.png">
-   + 
+   
+  **Encoder**
+ - Gồm hai luồng xử lý. Luồng đầu tiên, sử dụng các vùng text để đưa mô hình Transformer giúp việc trích xuất dữ liệu từ dạng text.
+ - Luồng thứ hai sử dụng một mạng CNN để trích xuất dữ liệu từ dạng text. Mặt khác, luồng thứ 2 sử dụng một mạng CNN để trích xuất đặc trưng từ các vùng ảnh. Sau đó kết hợp chúng lại bằng phép toán cộng ma trận được một ma trận X.
+ => X được sử dụng làm input X0 của Graph Module bằng cách qua một layer pooling.
+ 
+ ** Graph mô-đun**
+ - Mô hình sử dụng một graph neural network để mô hình háo bối cảnh toàn cục và các thông tin có cấu trúc không tuần tự để xác định trước loại cạnh và ma trận kề của đồ thị. cạnh là việc các nodes/text segments kết nối với nhau theo chiều 
