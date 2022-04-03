@@ -36,7 +36,7 @@
  + Phương pháp d: Nhận đầu vào là text, box chứa text và cả image nữa . Đầu tiên cho qua một mô hình Encoder gồm (CNN+ Transformer) sau đó cho qua mô hình Graph gọi là GLCN rồi cuối cùng đưa vào mô hình Decoder bao gồm (BiLSTM+CRF) để đưa ra dự đoán cho thực thể đó. => PICK
  
   Sử dụng phương pháp d để giải quyết bài toán => Processing Key Information Extraction from Documents using Improved Graph Learning-Convolutional Networks.
-  
+ <img src="https://raw.githubusercontent.com/wenwenyu/PICK-pytorch/master/assets/overall.png"> 
   Pick sử dụng 3 modul chính:
    + Encoder: Sử dụng mô hình Transformer để trích xuất đặc trưng từ văn bản và sử dụng một mạng CNN để trích xuất đặc trưng từ ảnh. => Kết hợp với text embbedings và image embbedings lại thành vector biểu diễn X thể hiện khả năng biểu diễn text và image chứa text đó. => X được xem là đầu vào của Graph mô-đun.
    + Graph mô-đun: sử dụng một mạng GCN để làm giàu khả năng biểu diễn giữa các node. Việc các thông tin cần trích xuaatss có vị trí và nội dung khác nhau nó không cục bộ và không theo thứ tự nên việc sử dụng Graph giúp mô hình có thể học được khả năng biểu diễn mỗi tương quan giữa chúng về khoảng cách và vị trí trong văn bản.
