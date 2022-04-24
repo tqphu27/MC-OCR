@@ -1,0 +1,94 @@
+2022-03-13 23:12:09,270 - INFO - Namespace(cfg='experiments/mobilenetv3_filtered_public_train.yaml')
+2022-03-13 23:12:09,270 - INFO - AUTO_RESUME: False
+DATASET:
+  DATASET: rotation_corrector
+  NUM_CLASSES: 2
+  ROOT: 
+  TEST_LIST: /datausers/ioit/dungduc.student/MC_OCR/mc_ocr/data/temp_out/line_cropped/val.txt
+  TRAIN_LIST: /datausers/ioit/dungduc.student/MC_OCR/mc_ocr/data/temp_out/line_cropped/train.txt
+DEBUG:
+  DEBUG: False
+GPUS: 1
+LOG_DIR: log
+MODEL:
+  BACKBONE: 
+  HEAD: 
+  NAME: mobilenetv3
+  PRETRAINED: 
+OUTPUT_DIR: output
+TEST:
+  BATCH_SIZE: 8
+  CENTER_CROP_TEST: False
+  IMAGE_SIZE: [64, 192]
+  MODEL_FILE: 
+TRAIN:
+  BATCH_SIZE: 8
+  BEGIN_EPOCH: 0
+  DROPOUT: 0.2
+  END_EPOCH: 500
+  IMAGE_SIZE: [64, 192]
+  LR: 0.001
+  OPTIMIZER: adam
+  PRINT_FREQ: 100
+  RANDOM_CROP: True
+  RESIZE: False
+  RESUME: True
+  SHUFFLE: True
+  VALIDATION_EPOCH: 1
+WORKERS: 3
+2022-03-13 23:12:28,818 - INFO - Namespace(cfg='experiments/mobilenetv3_filtered_public_train.yaml')
+2022-03-13 23:12:28,818 - INFO - AUTO_RESUME: False
+DATASET:
+  DATASET: rotation_corrector
+  NUM_CLASSES: 2
+  ROOT: 
+  TEST_LIST: /datausers/ioit/dungduc.student/MC_OCR/mc_ocr/data/temp_out/line_cropped/val.txt
+  TRAIN_LIST: /datausers/ioit/dungduc.student/MC_OCR/mc_ocr/data/temp_out/line_cropped/train.txt
+DEBUG:
+  DEBUG: False
+GPUS: 0
+LOG_DIR: log
+MODEL:
+  BACKBONE: 
+  HEAD: 
+  NAME: mobilenetv3
+  PRETRAINED: 
+OUTPUT_DIR: output
+TEST:
+  BATCH_SIZE: 256
+  CENTER_CROP_TEST: False
+  IMAGE_SIZE: [64, 192]
+  MODEL_FILE: 
+TRAIN:
+  BATCH_SIZE: 256
+  BEGIN_EPOCH: 0
+  DROPOUT: 0.2
+  END_EPOCH: 500
+  IMAGE_SIZE: [64, 192]
+  LR: 0.001
+  OPTIMIZER: adam
+  PRINT_FREQ: 100
+  RANDOM_CROP: True
+  RESIZE: False
+  RESUME: True
+  SHUFFLE: True
+  VALIDATION_EPOCH: 1
+WORKERS: 4
+2022-03-13 23:12:32,244 - INFO - Epoch [0/500]
+2022-03-13 23:12:53,057 - INFO - Epoch [0/500], Step [100/250], Loss: 0.5143
+2022-03-13 23:13:10,730 - INFO - Epoch [0/500], Step [200/250], Loss: 0.3850
+2022-03-13 23:13:30,338 - INFO - val acc: 0.8, val loss 0.416, fps 16088.807
+2022-03-13 23:13:30,358 - INFO - Saved model output/rotation_corrector/mobilenetv3/train_20220313_2312/mobilenetv3-Epoch-0-Loss-0.416-Acc-0.8.pth
+2022-03-13 23:13:30,358 - INFO - best val Acc: 0.8 in epoch: 0
+2022-03-13 23:13:30,358 - INFO - Min val Loss: 0.416 in epoch: 0
+2022-03-13 23:13:30,358 - INFO - --------------------------------------------
+2022-03-13 23:13:30,358 - INFO - Epoch [1/500]
+2022-03-13 23:13:47,761 - INFO - Epoch [1/500], Step [100/250], Loss: 0.2967
+2022-03-13 23:14:04,475 - INFO - Epoch [1/500], Step [200/250], Loss: 0.2914
+2022-03-13 23:14:25,001 - INFO - val acc: 0.87, val loss 0.282, fps 15595.663
+2022-03-13 23:14:25,022 - INFO - Saved model output/rotation_corrector/mobilenetv3/train_20220313_2312/mobilenetv3-Epoch-1-Loss-0.282-Acc-0.87.pth
+2022-03-13 23:14:25,022 - INFO - best val Acc: 0.87 in epoch: 1
+2022-03-13 23:14:25,022 - INFO - Min val Loss: 0.282 in epoch: 1
+2022-03-13 23:14:25,022 - INFO - --------------------------------------------
+2022-03-13 23:14:25,022 - INFO - Epoch [2/500]
+2022-03-13 23:14:43,574 - INFO - Epoch [2/500], Step [100/250], Loss: 0.2380

@@ -1,0 +1,71 @@
+2022-03-13 23:25:51,932 - INFO - Namespace(cfg='experiments/mobilenetv3_filtered_public_train.yaml')
+2022-03-13 23:25:51,932 - INFO - AUTO_RESUME: False
+DATASET:
+  DATASET: rotation_corrector
+  NUM_CLASSES: 2
+  ROOT: 
+  TEST_LIST: /datausers/ioit/dungduc.student/MC_OCR/mc_ocr/data/temp_out/line_cropped/val.txt
+  TRAIN_LIST: /datausers/ioit/dungduc.student/MC_OCR/mc_ocr/data/temp_out/line_cropped/train.txt
+DEBUG:
+  DEBUG: False
+GPUS: 0
+LOG_DIR: log
+MODEL:
+  BACKBONE: 
+  HEAD: 
+  NAME: mobilenetv3
+  PRETRAINED: 
+OUTPUT_DIR: output
+TEST:
+  BATCH_SIZE: 32
+  CENTER_CROP_TEST: False
+  IMAGE_SIZE: [64, 192]
+  MODEL_FILE: 
+TRAIN:
+  BATCH_SIZE: 32
+  BEGIN_EPOCH: 0
+  DROPOUT: 0.2
+  END_EPOCH: 100
+  IMAGE_SIZE: [64, 192]
+  LR: 0.001
+  OPTIMIZER: adam
+  PRINT_FREQ: 100
+  RANDOM_CROP: True
+  RESIZE: False
+  RESUME: True
+  SHUFFLE: True
+  VALIDATION_EPOCH: 1
+WORKERS: 2
+2022-03-13 23:25:55,284 - INFO - Epoch [0/100]
+2022-03-13 23:25:59,343 - INFO - Epoch [0/100], Step [100/1995], Loss: 0.6406
+2022-03-13 23:26:03,130 - INFO - Epoch [0/100], Step [200/1995], Loss: 0.5430
+2022-03-13 23:26:06,899 - INFO - Epoch [0/100], Step [300/1995], Loss: 0.5344
+2022-03-13 23:26:10,747 - INFO - Epoch [0/100], Step [400/1995], Loss: 0.5628
+2022-03-13 23:26:14,504 - INFO - Epoch [0/100], Step [500/1995], Loss: 0.4424
+2022-03-13 23:26:18,233 - INFO - Epoch [0/100], Step [600/1995], Loss: 0.3537
+2022-03-13 23:26:21,929 - INFO - Epoch [0/100], Step [700/1995], Loss: 0.2708
+2022-03-13 23:26:25,689 - INFO - Epoch [0/100], Step [800/1995], Loss: 0.4572
+2022-03-13 23:26:29,470 - INFO - Epoch [0/100], Step [900/1995], Loss: 0.3608
+2022-03-13 23:26:33,215 - INFO - Epoch [0/100], Step [1000/1995], Loss: 0.4844
+2022-03-13 23:26:36,937 - INFO - Epoch [0/100], Step [1100/1995], Loss: 0.3180
+2022-03-13 23:26:40,693 - INFO - Epoch [0/100], Step [1200/1995], Loss: 0.3511
+2022-03-13 23:26:44,457 - INFO - Epoch [0/100], Step [1300/1995], Loss: 0.3245
+2022-03-13 23:26:48,189 - INFO - Epoch [0/100], Step [1400/1995], Loss: 0.2199
+2022-03-13 23:26:51,985 - INFO - Epoch [0/100], Step [1500/1995], Loss: 0.3481
+2022-03-13 23:26:55,760 - INFO - Epoch [0/100], Step [1600/1995], Loss: 0.1670
+2022-03-13 23:26:59,463 - INFO - Epoch [0/100], Step [1700/1995], Loss: 0.3142
+2022-03-13 23:27:03,215 - INFO - Epoch [0/100], Step [1800/1995], Loss: 0.3923
+2022-03-13 23:27:06,912 - INFO - Epoch [0/100], Step [1900/1995], Loss: 0.2370
+2022-03-13 23:27:29,598 - INFO - val acc: 0.87, val loss 0.301, fps 5135.128
+2022-03-13 23:27:29,617 - INFO - Saved model output/rotation_corrector/mobilenetv3/train_20220313_2325/mobilenetv3-Epoch-0-Loss-0.301-Acc-0.87.pth
+2022-03-13 23:27:29,617 - INFO - best val Acc: 0.87 in epoch: 0
+2022-03-13 23:27:29,617 - INFO - Min val Loss: 0.301 in epoch: 0
+2022-03-13 23:27:29,617 - INFO - --------------------------------------------
+2022-03-13 23:27:29,617 - INFO - Epoch [1/100]
+2022-03-13 23:27:33,583 - INFO - Epoch [1/100], Step [100/1995], Loss: 0.2726
+2022-03-13 23:27:37,295 - INFO - Epoch [1/100], Step [200/1995], Loss: 0.1619
+2022-03-13 23:27:40,990 - INFO - Epoch [1/100], Step [300/1995], Loss: 0.3821
+2022-03-13 23:27:44,661 - INFO - Epoch [1/100], Step [400/1995], Loss: 0.2494
+2022-03-13 23:27:48,447 - INFO - Epoch [1/100], Step [500/1995], Loss: 0.2173
+2022-03-13 23:27:52,111 - INFO - Epoch [1/100], Step [600/1995], Loss: 0.2681
+2022-03-13 23:27:55,796 - INFO - Epoch [1/100], Step [700/1995], Loss: 0.2771
