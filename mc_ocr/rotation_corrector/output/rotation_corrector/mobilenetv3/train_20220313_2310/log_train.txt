@@ -1,0 +1,114 @@
+2022-03-13 23:10:09,174 - INFO - Namespace(cfg='experiments/mobilenetv3_filtered_public_train.yaml')
+2022-03-13 23:10:09,174 - INFO - AUTO_RESUME: False
+DATASET:
+  DATASET: rotation_corrector
+  NUM_CLASSES: 2
+  ROOT: 
+  TEST_LIST: /datausers/ioit/dungduc.student/MC_OCR/mc_ocr/data/temp_out/line_cropped/val.txt
+  TRAIN_LIST: /datausers/ioit/dungduc.student/MC_OCR/mc_ocr/data/temp_out/line_cropped/train.txt
+DEBUG:
+  DEBUG: False
+GPUS: 1
+LOG_DIR: log
+MODEL:
+  BACKBONE: 
+  HEAD: 
+  NAME: mobilenetv3
+  PRETRAINED: 
+OUTPUT_DIR: output
+TEST:
+  BATCH_SIZE: 128
+  CENTER_CROP_TEST: False
+  IMAGE_SIZE: [64, 192]
+  MODEL_FILE: 
+TRAIN:
+  BATCH_SIZE: 128
+  BEGIN_EPOCH: 0
+  DROPOUT: 0.2
+  END_EPOCH: 500
+  IMAGE_SIZE: [64, 192]
+  LR: 0.001
+  OPTIMIZER: adam
+  PRINT_FREQ: 100
+  RANDOM_CROP: True
+  RESIZE: False
+  RESUME: True
+  SHUFFLE: True
+  VALIDATION_EPOCH: 1
+WORKERS: 4
+2022-03-13 23:10:23,222 - INFO - Namespace(cfg='experiments/mobilenetv3_filtered_public_train.yaml')
+2022-03-13 23:10:23,222 - INFO - AUTO_RESUME: False
+DATASET:
+  DATASET: rotation_corrector
+  NUM_CLASSES: 2
+  ROOT: 
+  TEST_LIST: /datausers/ioit/dungduc.student/MC_OCR/mc_ocr/data/temp_out/line_cropped/val.txt
+  TRAIN_LIST: /datausers/ioit/dungduc.student/MC_OCR/mc_ocr/data/temp_out/line_cropped/train.txt
+DEBUG:
+  DEBUG: False
+GPUS: 1
+LOG_DIR: log
+MODEL:
+  BACKBONE: 
+  HEAD: 
+  NAME: mobilenetv3
+  PRETRAINED: 
+OUTPUT_DIR: output
+TEST:
+  BATCH_SIZE: 128
+  CENTER_CROP_TEST: False
+  IMAGE_SIZE: [64, 192]
+  MODEL_FILE: 
+TRAIN:
+  BATCH_SIZE: 128
+  BEGIN_EPOCH: 0
+  DROPOUT: 0.2
+  END_EPOCH: 500
+  IMAGE_SIZE: [64, 192]
+  LR: 0.001
+  OPTIMIZER: adam
+  PRINT_FREQ: 100
+  RANDOM_CROP: True
+  RESIZE: False
+  RESUME: True
+  SHUFFLE: True
+  VALIDATION_EPOCH: 1
+WORKERS: 3
+2022-03-13 23:10:40,442 - INFO - Namespace(cfg='experiments/mobilenetv3_filtered_public_train.yaml')
+2022-03-13 23:10:40,442 - INFO - AUTO_RESUME: False
+DATASET:
+  DATASET: rotation_corrector
+  NUM_CLASSES: 2
+  ROOT: 
+  TEST_LIST: /datausers/ioit/dungduc.student/MC_OCR/mc_ocr/data/temp_out/line_cropped/val.txt
+  TRAIN_LIST: /datausers/ioit/dungduc.student/MC_OCR/mc_ocr/data/temp_out/line_cropped/train.txt
+DEBUG:
+  DEBUG: False
+GPUS: 1
+LOG_DIR: log
+MODEL:
+  BACKBONE: 
+  HEAD: 
+  NAME: mobilenetv3
+  PRETRAINED: 
+OUTPUT_DIR: output
+TEST:
+  BATCH_SIZE: 64
+  CENTER_CROP_TEST: False
+  IMAGE_SIZE: [64, 192]
+  MODEL_FILE: 
+TRAIN:
+  BATCH_SIZE: 64
+  BEGIN_EPOCH: 0
+  DROPOUT: 0.2
+  END_EPOCH: 500
+  IMAGE_SIZE: [64, 192]
+  LR: 0.001
+  OPTIMIZER: adam
+  PRINT_FREQ: 100
+  RANDOM_CROP: True
+  RESIZE: False
+  RESUME: True
+  SHUFFLE: True
+  VALIDATION_EPOCH: 1
+WORKERS: 3
