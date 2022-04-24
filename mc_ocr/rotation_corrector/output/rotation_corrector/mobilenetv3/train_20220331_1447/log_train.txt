@@ -1,0 +1,568 @@
+2022-03-31 14:47:27,179 - INFO - Namespace(cfg='experiments/mobilenetv3_filtered_public_train.yaml')
+2022-03-31 14:47:27,179 - INFO - AUTO_RESUME: False
+DATASET:
+  DATASET: rotation_corrector
+  NUM_CLASSES: 2
+  ROOT: 
+  TEST_LIST: /datausers/ioit/dungduc.student/MC_OCR/mc_ocr/data/temp-o/line_cropped/val.txt
+  TRAIN_LIST: /datausers/ioit/dungduc.student/MC_OCR/mc_ocr/data/temp-o/line_cropped/train.txt
+DEBUG:
+  DEBUG: False
+GPUS: 0
+LOG_DIR: log
+MODEL:
+  BACKBONE: 
+  HEAD: 
+  NAME: mobilenetv3
+  PRETRAINED: 
+OUTPUT_DIR: output
+TEST:
+  BATCH_SIZE: 256
+  CENTER_CROP_TEST: False
+  IMAGE_SIZE: [64, 192]
+  MODEL_FILE: 
+TRAIN:
+  BATCH_SIZE: 256
+  BEGIN_EPOCH: 0
+  DROPOUT: 0.2
+  END_EPOCH: 100
+  IMAGE_SIZE: [64, 192]
+  LR: 0.001
+  OPTIMIZER: adam
+  PRINT_FREQ: 100
+  RANDOM_CROP: True
+  RESIZE: False
+  RESUME: True
+  SHUFFLE: True
+  VALIDATION_EPOCH: 1
+WORKERS: 4
+2022-03-31 14:47:30,516 - INFO - Epoch [0/100]
+2022-03-31 14:47:39,682 - INFO - val acc: 0.52, val loss 0.693, fps 16070.46
+2022-03-31 14:47:39,712 - INFO - Saved model output/rotation_corrector/mobilenetv3/train_20220331_1447/mobilenetv3-Epoch-0-Loss-0.693-Acc-0.52.pth
+2022-03-31 14:47:39,713 - INFO - best val Acc: 0.52 in epoch: 0
+2022-03-31 14:47:39,713 - INFO - Min val Loss: 0.693 in epoch: 0
+2022-03-31 14:47:39,713 - INFO - --------------------------------------------
+2022-03-31 14:47:39,713 - INFO - Epoch [1/100]
+2022-03-31 14:47:48,936 - INFO - val acc: 0.52, val loss 0.692, fps 16156.102
+2022-03-31 14:47:48,964 - INFO - Saved model output/rotation_corrector/mobilenetv3/train_20220331_1447/mobilenetv3-Epoch-1-Loss-0.692-Acc-0.52.pth
+2022-03-31 14:47:48,964 - INFO - best val Acc: 0.52 in epoch: 0
+2022-03-31 14:47:48,964 - INFO - Min val Loss: 0.692 in epoch: 1
+2022-03-31 14:47:48,964 - INFO - --------------------------------------------
+2022-03-31 14:47:48,964 - INFO - Epoch [2/100]
+2022-03-31 14:47:58,099 - INFO - val acc: 0.52, val loss 0.696, fps 16167.761
+2022-03-31 14:47:58,101 - INFO - best val Acc: 0.52 in epoch: 0
+2022-03-31 14:47:58,102 - INFO - Min val Loss: 0.692 in epoch: 1
+2022-03-31 14:47:58,102 - INFO - --------------------------------------------
+2022-03-31 14:47:58,102 - INFO - Epoch [3/100]
+2022-03-31 14:48:07,278 - INFO - val acc: 0.6, val loss 0.662, fps 16193.038
+2022-03-31 14:48:07,305 - INFO - Saved model output/rotation_corrector/mobilenetv3/train_20220331_1447/mobilenetv3-Epoch-3-Loss-0.662-Acc-0.6.pth
+2022-03-31 14:48:07,305 - INFO - best val Acc: 0.6 in epoch: 3
+2022-03-31 14:48:07,305 - INFO - Min val Loss: 0.662 in epoch: 3
+2022-03-31 14:48:07,305 - INFO - --------------------------------------------
+2022-03-31 14:48:07,305 - INFO - Epoch [4/100]
+2022-03-31 14:48:16,452 - INFO - val acc: 0.64, val loss 0.644, fps 16116.116
+2022-03-31 14:48:16,478 - INFO - Saved model output/rotation_corrector/mobilenetv3/train_20220331_1447/mobilenetv3-Epoch-4-Loss-0.644-Acc-0.64.pth
+2022-03-31 14:48:16,478 - INFO - best val Acc: 0.64 in epoch: 4
+2022-03-31 14:48:16,478 - INFO - Min val Loss: 0.644 in epoch: 4
+2022-03-31 14:48:16,478 - INFO - --------------------------------------------
+2022-03-31 14:48:16,478 - INFO - Epoch [5/100]
+2022-03-31 14:48:25,513 - INFO - val acc: 0.67, val loss 0.621, fps 16176.581
+2022-03-31 14:48:25,538 - INFO - Saved model output/rotation_corrector/mobilenetv3/train_20220331_1447/mobilenetv3-Epoch-5-Loss-0.621-Acc-0.67.pth
+2022-03-31 14:48:25,538 - INFO - best val Acc: 0.67 in epoch: 5
+2022-03-31 14:48:25,539 - INFO - Min val Loss: 0.621 in epoch: 5
+2022-03-31 14:48:25,539 - INFO - --------------------------------------------
+2022-03-31 14:48:25,539 - INFO - Epoch [6/100]
+2022-03-31 14:48:34,794 - INFO - val acc: 0.67, val loss 0.663, fps 16141.898
+2022-03-31 14:48:34,797 - INFO - best val Acc: 0.67 in epoch: 5
+2022-03-31 14:48:34,797 - INFO - Min val Loss: 0.621 in epoch: 5
+2022-03-31 14:48:34,797 - INFO - --------------------------------------------
+2022-03-31 14:48:34,797 - INFO - Epoch [7/100]
+2022-03-31 14:48:43,996 - INFO - val acc: 0.72, val loss 0.537, fps 15975.954
+2022-03-31 14:48:44,023 - INFO - Saved model output/rotation_corrector/mobilenetv3/train_20220331_1447/mobilenetv3-Epoch-7-Loss-0.537-Acc-0.72.pth
+2022-03-31 14:48:44,024 - INFO - best val Acc: 0.72 in epoch: 7
+2022-03-31 14:48:44,024 - INFO - Min val Loss: 0.537 in epoch: 7
+2022-03-31 14:48:44,024 - INFO - --------------------------------------------
+2022-03-31 14:48:44,024 - INFO - Epoch [8/100]
+2022-03-31 14:48:53,108 - INFO - val acc: 0.75, val loss 0.495, fps 16146.126
+2022-03-31 14:48:53,134 - INFO - Saved model output/rotation_corrector/mobilenetv3/train_20220331_1447/mobilenetv3-Epoch-8-Loss-0.495-Acc-0.75.pth
+2022-03-31 14:48:53,134 - INFO - best val Acc: 0.75 in epoch: 8
+2022-03-31 14:48:53,134 - INFO - Min val Loss: 0.495 in epoch: 8
+2022-03-31 14:48:53,134 - INFO - --------------------------------------------
+2022-03-31 14:48:53,135 - INFO - Epoch [9/100]
+2022-03-31 14:49:02,227 - INFO - val acc: 0.76, val loss 0.478, fps 16187.832
+2022-03-31 14:49:02,253 - INFO - Saved model output/rotation_corrector/mobilenetv3/train_20220331_1447/mobilenetv3-Epoch-9-Loss-0.478-Acc-0.76.pth
+2022-03-31 14:49:02,253 - INFO - best val Acc: 0.76 in epoch: 9
+2022-03-31 14:49:02,253 - INFO - Min val Loss: 0.478 in epoch: 9
+2022-03-31 14:49:02,253 - INFO - --------------------------------------------
+2022-03-31 14:49:02,253 - INFO - Epoch [10/100]
+2022-03-31 14:49:11,476 - INFO - val acc: 0.78, val loss 0.459, fps 16160.235
+2022-03-31 14:49:11,503 - INFO - Saved model output/rotation_corrector/mobilenetv3/train_20220331_1447/mobilenetv3-Epoch-10-Loss-0.459-Acc-0.78.pth
+2022-03-31 14:49:11,503 - INFO - best val Acc: 0.78 in epoch: 10
+2022-03-31 14:49:11,503 - INFO - Min val Loss: 0.459 in epoch: 10
+2022-03-31 14:49:11,503 - INFO - --------------------------------------------
+2022-03-31 14:49:11,503 - INFO - Epoch [11/100]
+2022-03-31 14:49:20,613 - INFO - val acc: 0.8, val loss 0.416, fps 16133.218
+2022-03-31 14:49:20,638 - INFO - Saved model output/rotation_corrector/mobilenetv3/train_20220331_1447/mobilenetv3-Epoch-11-Loss-0.416-Acc-0.8.pth
+2022-03-31 14:49:20,638 - INFO - best val Acc: 0.8 in epoch: 11
+2022-03-31 14:49:20,638 - INFO - Min val Loss: 0.416 in epoch: 11
+2022-03-31 14:49:20,639 - INFO - --------------------------------------------
+2022-03-31 14:49:20,639 - INFO - Epoch [12/100]
+2022-03-31 14:49:29,998 - INFO - val acc: 0.81, val loss 0.408, fps 16152.459
+2022-03-31 14:49:30,025 - INFO - Saved model output/rotation_corrector/mobilenetv3/train_20220331_1447/mobilenetv3-Epoch-12-Loss-0.408-Acc-0.81.pth
+2022-03-31 14:49:30,025 - INFO - best val Acc: 0.81 in epoch: 12
+2022-03-31 14:49:30,025 - INFO - Min val Loss: 0.408 in epoch: 12
+2022-03-31 14:49:30,025 - INFO - --------------------------------------------
+2022-03-31 14:49:30,025 - INFO - Epoch [13/100]
+2022-03-31 14:49:39,243 - INFO - val acc: 0.79, val loss 0.415, fps 16108.408
+2022-03-31 14:49:39,246 - INFO - best val Acc: 0.81 in epoch: 12
+2022-03-31 14:49:39,246 - INFO - Min val Loss: 0.408 in epoch: 12
+2022-03-31 14:49:39,246 - INFO - --------------------------------------------
+2022-03-31 14:49:39,246 - INFO - Epoch [14/100]
+2022-03-31 14:49:48,431 - INFO - val acc: 0.82, val loss 0.372, fps 16136.392
+2022-03-31 14:49:48,458 - INFO - Saved model output/rotation_corrector/mobilenetv3/train_20220331_1447/mobilenetv3-Epoch-14-Loss-0.372-Acc-0.82.pth
+2022-03-31 14:49:48,458 - INFO - best val Acc: 0.82 in epoch: 14
+2022-03-31 14:49:48,458 - INFO - Min val Loss: 0.372 in epoch: 14
+2022-03-31 14:49:48,458 - INFO - --------------------------------------------
+2022-03-31 14:49:48,458 - INFO - Epoch [15/100]
+2022-03-31 14:49:57,940 - INFO - val acc: 0.81, val loss 0.398, fps 16125.366
+2022-03-31 14:49:57,943 - INFO - best val Acc: 0.82 in epoch: 14
+2022-03-31 14:49:57,943 - INFO - Min val Loss: 0.372 in epoch: 14
+2022-03-31 14:49:57,943 - INFO - --------------------------------------------
+2022-03-31 14:49:57,943 - INFO - Epoch [16/100]
+2022-03-31 14:50:07,135 - INFO - val acc: 0.82, val loss 0.371, fps 16138.952
+2022-03-31 14:50:07,161 - INFO - Saved model output/rotation_corrector/mobilenetv3/train_20220331_1447/mobilenetv3-Epoch-16-Loss-0.371-Acc-0.82.pth
+2022-03-31 14:50:07,161 - INFO - best val Acc: 0.82 in epoch: 14
+2022-03-31 14:50:07,161 - INFO - Min val Loss: 0.371 in epoch: 16
+2022-03-31 14:50:07,162 - INFO - --------------------------------------------
+2022-03-31 14:50:07,162 - INFO - Epoch [17/100]
+2022-03-31 14:50:16,268 - INFO - val acc: 0.84, val loss 0.349, fps 16142.666
+2022-03-31 14:50:16,295 - INFO - Saved model output/rotation_corrector/mobilenetv3/train_20220331_1447/mobilenetv3-Epoch-17-Loss-0.349-Acc-0.84.pth
+2022-03-31 14:50:16,295 - INFO - best val Acc: 0.84 in epoch: 17
+2022-03-31 14:50:16,295 - INFO - Min val Loss: 0.349 in epoch: 17
+2022-03-31 14:50:16,295 - INFO - --------------------------------------------
+2022-03-31 14:50:16,295 - INFO - Epoch [18/100]
+2022-03-31 14:50:25,584 - INFO - val acc: 0.81, val loss 0.37, fps 16193.966
+2022-03-31 14:50:25,587 - INFO - best val Acc: 0.84 in epoch: 17
+2022-03-31 14:50:25,587 - INFO - Min val Loss: 0.349 in epoch: 17
+2022-03-31 14:50:25,587 - INFO - --------------------------------------------
+2022-03-31 14:50:25,587 - INFO - Epoch [19/100]
+2022-03-31 14:50:34,758 - INFO - val acc: 0.84, val loss 0.336, fps 16095.688
+2022-03-31 14:50:34,794 - INFO - Saved model output/rotation_corrector/mobilenetv3/train_20220331_1447/mobilenetv3-Epoch-19-Loss-0.336-Acc-0.84.pth
+2022-03-31 14:50:34,794 - INFO - best val Acc: 0.84 in epoch: 17
+2022-03-31 14:50:34,794 - INFO - Min val Loss: 0.336 in epoch: 19
+2022-03-31 14:50:34,794 - INFO - --------------------------------------------
+2022-03-31 14:50:34,794 - INFO - Epoch [20/100]
+2022-03-31 14:50:43,879 - INFO - val acc: 0.83, val loss 0.368, fps 16165.757
+2022-03-31 14:50:43,883 - INFO - best val Acc: 0.84 in epoch: 17
+2022-03-31 14:50:43,883 - INFO - Min val Loss: 0.336 in epoch: 19
+2022-03-31 14:50:43,883 - INFO - --------------------------------------------
+2022-03-31 14:50:43,883 - INFO - Epoch [21/100]
+2022-03-31 14:50:53,016 - INFO - val acc: 0.85, val loss 0.325, fps 16175.964
+2022-03-31 14:50:53,043 - INFO - Saved model output/rotation_corrector/mobilenetv3/train_20220331_1447/mobilenetv3-Epoch-21-Loss-0.325-Acc-0.85.pth
+2022-03-31 14:50:53,043 - INFO - best val Acc: 0.85 in epoch: 21
+2022-03-31 14:50:53,043 - INFO - Min val Loss: 0.325 in epoch: 21
+2022-03-31 14:50:53,043 - INFO - --------------------------------------------
+2022-03-31 14:50:53,043 - INFO - Epoch [22/100]
+2022-03-31 14:51:02,202 - INFO - val acc: 0.84, val loss 0.324, fps 16026.274
+2022-03-31 14:51:02,229 - INFO - Saved model output/rotation_corrector/mobilenetv3/train_20220331_1447/mobilenetv3-Epoch-22-Loss-0.324-Acc-0.84.pth
+2022-03-31 14:51:02,229 - INFO - best val Acc: 0.85 in epoch: 21
+2022-03-31 14:51:02,229 - INFO - Min val Loss: 0.324 in epoch: 22
+2022-03-31 14:51:02,229 - INFO - --------------------------------------------
+2022-03-31 14:51:02,229 - INFO - Epoch [23/100]
+2022-03-31 14:51:11,409 - INFO - val acc: 0.86, val loss 0.302, fps 16090.494
+2022-03-31 14:51:11,436 - INFO - Saved model output/rotation_corrector/mobilenetv3/train_20220331_1447/mobilenetv3-Epoch-23-Loss-0.302-Acc-0.86.pth
+2022-03-31 14:51:11,436 - INFO - best val Acc: 0.86 in epoch: 23
+2022-03-31 14:51:11,436 - INFO - Min val Loss: 0.302 in epoch: 23
+2022-03-31 14:51:11,436 - INFO - --------------------------------------------
+2022-03-31 14:51:11,437 - INFO - Epoch [24/100]
+2022-03-31 14:51:20,745 - INFO - val acc: 0.85, val loss 0.317, fps 16146.459
+2022-03-31 14:51:20,748 - INFO - best val Acc: 0.86 in epoch: 23
+2022-03-31 14:51:20,748 - INFO - Min val Loss: 0.302 in epoch: 23
+2022-03-31 14:51:20,748 - INFO - --------------------------------------------
+2022-03-31 14:51:20,748 - INFO - Epoch [25/100]
+2022-03-31 14:51:30,040 - INFO - val acc: 0.86, val loss 0.304, fps 16102.696
+2022-03-31 14:51:30,043 - INFO - best val Acc: 0.86 in epoch: 23
+2022-03-31 14:51:30,043 - INFO - Min val Loss: 0.302 in epoch: 23
+2022-03-31 14:51:30,043 - INFO - --------------------------------------------
+2022-03-31 14:51:30,043 - INFO - Epoch [26/100]
+2022-03-31 14:51:39,608 - INFO - val acc: 0.86, val loss 0.289, fps 16162.752
+2022-03-31 14:51:39,633 - INFO - Saved model output/rotation_corrector/mobilenetv3/train_20220331_1447/mobilenetv3-Epoch-26-Loss-0.289-Acc-0.86.pth
+2022-03-31 14:51:39,633 - INFO - best val Acc: 0.86 in epoch: 23
+2022-03-31 14:51:39,633 - INFO - Min val Loss: 0.289 in epoch: 26
+2022-03-31 14:51:39,633 - INFO - --------------------------------------------
+2022-03-31 14:51:39,634 - INFO - Epoch [27/100]
+2022-03-31 14:51:48,776 - INFO - val acc: 0.86, val loss 0.295, fps 16092.607
+2022-03-31 14:51:48,779 - INFO - best val Acc: 0.86 in epoch: 23
+2022-03-31 14:51:48,779 - INFO - Min val Loss: 0.289 in epoch: 26
+2022-03-31 14:51:48,779 - INFO - --------------------------------------------
+2022-03-31 14:51:48,779 - INFO - Epoch [28/100]
+2022-03-31 14:51:57,873 - INFO - val acc: 0.86, val loss 0.284, fps 16165.783
+2022-03-31 14:51:57,906 - INFO - Saved model output/rotation_corrector/mobilenetv3/train_20220331_1447/mobilenetv3-Epoch-28-Loss-0.284-Acc-0.86.pth
+2022-03-31 14:51:57,907 - INFO - best val Acc: 0.86 in epoch: 23
+2022-03-31 14:51:57,907 - INFO - Min val Loss: 0.284 in epoch: 28
+2022-03-31 14:51:57,907 - INFO - --------------------------------------------
+2022-03-31 14:51:57,907 - INFO - Epoch [29/100]
+2022-03-31 14:52:06,937 - INFO - val acc: 0.86, val loss 0.294, fps 16123.474
+2022-03-31 14:52:06,941 - INFO - best val Acc: 0.86 in epoch: 23
+2022-03-31 14:52:06,941 - INFO - Min val Loss: 0.284 in epoch: 28
+2022-03-31 14:52:06,941 - INFO - --------------------------------------------
+2022-03-31 14:52:06,941 - INFO - Epoch [30/100]
+2022-03-31 14:52:15,994 - INFO - val acc: 0.87, val loss 0.302, fps 16151.202
+2022-03-31 14:52:16,025 - INFO - Saved model output/rotation_corrector/mobilenetv3/train_20220331_1447/mobilenetv3-Epoch-30-Loss-0.302-Acc-0.87.pth
+2022-03-31 14:52:16,025 - INFO - best val Acc: 0.87 in epoch: 30
+2022-03-31 14:52:16,025 - INFO - Min val Loss: 0.284 in epoch: 28
+2022-03-31 14:52:16,025 - INFO - --------------------------------------------
+2022-03-31 14:52:16,025 - INFO - Epoch [31/100]
+2022-03-31 14:52:25,290 - INFO - val acc: 0.85, val loss 0.307, fps 16160.928
+2022-03-31 14:52:25,293 - INFO - best val Acc: 0.87 in epoch: 30
+2022-03-31 14:52:25,293 - INFO - Min val Loss: 0.284 in epoch: 28
+2022-03-31 14:52:25,293 - INFO - --------------------------------------------
+2022-03-31 14:52:25,293 - INFO - Epoch [32/100]
+2022-03-31 14:52:34,474 - INFO - val acc: 0.86, val loss 0.291, fps 16177.816
+2022-03-31 14:52:34,476 - INFO - best val Acc: 0.87 in epoch: 30
+2022-03-31 14:52:34,476 - INFO - Min val Loss: 0.284 in epoch: 28
+2022-03-31 14:52:34,476 - INFO - --------------------------------------------
+2022-03-31 14:52:34,477 - INFO - Epoch [33/100]
+2022-03-31 14:52:43,703 - INFO - val acc: 0.86, val loss 0.294, fps 16172.929
+2022-03-31 14:52:43,706 - INFO - best val Acc: 0.87 in epoch: 30
+2022-03-31 14:52:43,706 - INFO - Min val Loss: 0.284 in epoch: 28
+2022-03-31 14:52:43,706 - INFO - --------------------------------------------
+2022-03-31 14:52:43,706 - INFO - Epoch [34/100]
+2022-03-31 14:52:52,831 - INFO - val acc: 0.86, val loss 0.282, fps 16136.417
+2022-03-31 14:52:52,857 - INFO - Saved model output/rotation_corrector/mobilenetv3/train_20220331_1447/mobilenetv3-Epoch-34-Loss-0.282-Acc-0.86.pth
+2022-03-31 14:52:52,857 - INFO - best val Acc: 0.87 in epoch: 30
+2022-03-31 14:52:52,857 - INFO - Min val Loss: 0.282 in epoch: 34
+2022-03-31 14:52:52,857 - INFO - --------------------------------------------
+2022-03-31 14:52:52,857 - INFO - Epoch [35/100]
+2022-03-31 14:53:02,061 - INFO - val acc: 0.86, val loss 0.295, fps 15892.132
+2022-03-31 14:53:02,064 - INFO - best val Acc: 0.87 in epoch: 30
+2022-03-31 14:53:02,065 - INFO - Min val Loss: 0.282 in epoch: 34
+2022-03-31 14:53:02,065 - INFO - --------------------------------------------
+2022-03-31 14:53:02,065 - INFO - Epoch [36/100]
+2022-03-31 14:53:11,164 - INFO - val acc: 0.87, val loss 0.273, fps 16147.869
+2022-03-31 14:53:11,191 - INFO - Saved model output/rotation_corrector/mobilenetv3/train_20220331_1447/mobilenetv3-Epoch-36-Loss-0.273-Acc-0.87.pth
+2022-03-31 14:53:11,191 - INFO - best val Acc: 0.87 in epoch: 30
+2022-03-31 14:53:11,191 - INFO - Min val Loss: 0.273 in epoch: 36
+2022-03-31 14:53:11,191 - INFO - --------------------------------------------
+2022-03-31 14:53:11,191 - INFO - Epoch [37/100]
+2022-03-31 14:53:20,343 - INFO - val acc: 0.87, val loss 0.286, fps 16148.356
+2022-03-31 14:53:20,346 - INFO - best val Acc: 0.87 in epoch: 30
+2022-03-31 14:53:20,346 - INFO - Min val Loss: 0.273 in epoch: 36
+2022-03-31 14:53:20,346 - INFO - --------------------------------------------
+2022-03-31 14:53:20,346 - INFO - Epoch [38/100]
+2022-03-31 14:53:29,769 - INFO - val acc: 0.85, val loss 0.323, fps 16036.432
+2022-03-31 14:53:29,772 - INFO - best val Acc: 0.87 in epoch: 30
+2022-03-31 14:53:29,773 - INFO - Min val Loss: 0.273 in epoch: 36
+2022-03-31 14:53:29,773 - INFO - --------------------------------------------
+2022-03-31 14:53:29,773 - INFO - Epoch [39/100]
+2022-03-31 14:53:38,926 - INFO - val acc: 0.87, val loss 0.266, fps 16063.151
+2022-03-31 14:53:38,953 - INFO - Saved model output/rotation_corrector/mobilenetv3/train_20220331_1447/mobilenetv3-Epoch-39-Loss-0.266-Acc-0.87.pth
+2022-03-31 14:53:38,953 - INFO - best val Acc: 0.87 in epoch: 30
+2022-03-31 14:53:38,953 - INFO - Min val Loss: 0.266 in epoch: 39
+2022-03-31 14:53:38,953 - INFO - --------------------------------------------
+2022-03-31 14:53:38,953 - INFO - Epoch [40/100]
+2022-03-31 14:53:48,101 - INFO - val acc: 0.87, val loss 0.253, fps 16082.963
+2022-03-31 14:53:48,128 - INFO - Saved model output/rotation_corrector/mobilenetv3/train_20220331_1447/mobilenetv3-Epoch-40-Loss-0.253-Acc-0.87.pth
+2022-03-31 14:53:48,128 - INFO - best val Acc: 0.87 in epoch: 30
+2022-03-31 14:53:48,128 - INFO - Min val Loss: 0.253 in epoch: 40
+2022-03-31 14:53:48,128 - INFO - --------------------------------------------
+2022-03-31 14:53:48,128 - INFO - Epoch [41/100]
+2022-03-31 14:53:57,649 - INFO - val acc: 0.87, val loss 0.269, fps 16087.872
+2022-03-31 14:53:57,652 - INFO - best val Acc: 0.87 in epoch: 30
+2022-03-31 14:53:57,652 - INFO - Min val Loss: 0.253 in epoch: 40
+2022-03-31 14:53:57,652 - INFO - --------------------------------------------
+2022-03-31 14:53:57,652 - INFO - Epoch [42/100]
+2022-03-31 14:54:06,807 - INFO - val acc: 0.86, val loss 0.333, fps 16147.151
+2022-03-31 14:54:06,810 - INFO - best val Acc: 0.87 in epoch: 30
+2022-03-31 14:54:06,810 - INFO - Min val Loss: 0.253 in epoch: 40
+2022-03-31 14:54:06,810 - INFO - --------------------------------------------
+2022-03-31 14:54:06,810 - INFO - Epoch [43/100]
+2022-03-31 14:54:16,007 - INFO - val acc: 0.88, val loss 0.277, fps 16132.962
+2022-03-31 14:54:16,034 - INFO - Saved model output/rotation_corrector/mobilenetv3/train_20220331_1447/mobilenetv3-Epoch-43-Loss-0.277-Acc-0.88.pth
+2022-03-31 14:54:16,034 - INFO - best val Acc: 0.88 in epoch: 43
+2022-03-31 14:54:16,034 - INFO - Min val Loss: 0.253 in epoch: 40
+2022-03-31 14:54:16,034 - INFO - --------------------------------------------
+2022-03-31 14:54:16,034 - INFO - Epoch [44/100]
+2022-03-31 14:54:25,128 - INFO - val acc: 0.87, val loss 0.268, fps 16160.902
+2022-03-31 14:54:25,131 - INFO - best val Acc: 0.88 in epoch: 43
+2022-03-31 14:54:25,132 - INFO - Min val Loss: 0.253 in epoch: 40
+2022-03-31 14:54:25,132 - INFO - --------------------------------------------
+2022-03-31 14:54:25,132 - INFO - Epoch [45/100]
+2022-03-31 14:54:34,114 - INFO - val acc: 0.89, val loss 0.249, fps 16186.853
+2022-03-31 14:54:34,140 - INFO - Saved model output/rotation_corrector/mobilenetv3/train_20220331_1447/mobilenetv3-Epoch-45-Loss-0.249-Acc-0.89.pth
+2022-03-31 14:54:34,140 - INFO - best val Acc: 0.89 in epoch: 45
+2022-03-31 14:54:34,140 - INFO - Min val Loss: 0.249 in epoch: 45
+2022-03-31 14:54:34,140 - INFO - --------------------------------------------
+2022-03-31 14:54:34,140 - INFO - Epoch [46/100]
+2022-03-31 14:54:43,447 - INFO - val acc: 0.87, val loss 0.289, fps 16106.903
+2022-03-31 14:54:43,450 - INFO - best val Acc: 0.89 in epoch: 45
+2022-03-31 14:54:43,451 - INFO - Min val Loss: 0.249 in epoch: 45
+2022-03-31 14:54:43,451 - INFO - --------------------------------------------
+2022-03-31 14:54:43,451 - INFO - Epoch [47/100]
+2022-03-31 14:54:52,598 - INFO - val acc: 0.88, val loss 0.268, fps 16104.2
+2022-03-31 14:54:52,601 - INFO - best val Acc: 0.89 in epoch: 45
+2022-03-31 14:54:52,601 - INFO - Min val Loss: 0.249 in epoch: 45
+2022-03-31 14:54:52,601 - INFO - --------------------------------------------
+2022-03-31 14:54:52,601 - INFO - Epoch [48/100]
+2022-03-31 14:55:01,729 - INFO - val acc: 0.87, val loss 0.256, fps 16173.392
+2022-03-31 14:55:01,732 - INFO - best val Acc: 0.89 in epoch: 45
+2022-03-31 14:55:01,732 - INFO - Min val Loss: 0.249 in epoch: 45
+2022-03-31 14:55:01,732 - INFO - --------------------------------------------
+2022-03-31 14:55:01,732 - INFO - Epoch [49/100]
+2022-03-31 14:55:10,882 - INFO - val acc: 0.88, val loss 0.271, fps 16175.887
+2022-03-31 14:55:10,885 - INFO - best val Acc: 0.89 in epoch: 45
+2022-03-31 14:55:10,885 - INFO - Min val Loss: 0.249 in epoch: 45
+2022-03-31 14:55:10,885 - INFO - --------------------------------------------
+2022-03-31 14:55:10,885 - INFO - Epoch [50/100]
+2022-03-31 14:55:20,356 - INFO - val acc: 0.88, val loss 0.268, fps 16119.283
+2022-03-31 14:55:20,359 - INFO - best val Acc: 0.89 in epoch: 45
+2022-03-31 14:55:20,359 - INFO - Min val Loss: 0.249 in epoch: 45
+2022-03-31 14:55:20,359 - INFO - --------------------------------------------
+2022-03-31 14:55:20,359 - INFO - Epoch [51/100]
+2022-03-31 14:55:29,464 - INFO - val acc: 0.89, val loss 0.251, fps 16133.474
+2022-03-31 14:55:29,467 - INFO - best val Acc: 0.89 in epoch: 45
+2022-03-31 14:55:29,467 - INFO - Min val Loss: 0.249 in epoch: 45
+2022-03-31 14:55:29,467 - INFO - --------------------------------------------
+2022-03-31 14:55:29,467 - INFO - Epoch [52/100]
+2022-03-31 14:55:38,949 - INFO - val acc: 0.87, val loss 0.282, fps 16179.257
+2022-03-31 14:55:38,951 - INFO - best val Acc: 0.89 in epoch: 45
+2022-03-31 14:55:38,952 - INFO - Min val Loss: 0.249 in epoch: 45
+2022-03-31 14:55:38,952 - INFO - --------------------------------------------
+2022-03-31 14:55:38,952 - INFO - Epoch [53/100]
+2022-03-31 14:55:47,986 - INFO - val acc: 0.87, val loss 0.298, fps 16167.556
+2022-03-31 14:55:47,989 - INFO - best val Acc: 0.89 in epoch: 45
+2022-03-31 14:55:47,989 - INFO - Min val Loss: 0.249 in epoch: 45
+2022-03-31 14:55:47,989 - INFO - --------------------------------------------
+2022-03-31 14:55:47,989 - INFO - Epoch [54/100]
+2022-03-31 14:55:57,052 - INFO - val acc: 0.88, val loss 0.29, fps 16152.382
+2022-03-31 14:55:57,055 - INFO - best val Acc: 0.89 in epoch: 45
+2022-03-31 14:55:57,055 - INFO - Min val Loss: 0.249 in epoch: 45
+2022-03-31 14:55:57,055 - INFO - --------------------------------------------
+2022-03-31 14:55:57,055 - INFO - Epoch [55/100]
+2022-03-31 14:56:06,208 - INFO - val acc: 0.9, val loss 0.262, fps 16158.207
+2022-03-31 14:56:06,235 - INFO - Saved model output/rotation_corrector/mobilenetv3/train_20220331_1447/mobilenetv3-Epoch-55-Loss-0.262-Acc-0.9.pth
+2022-03-31 14:56:06,235 - INFO - best val Acc: 0.9 in epoch: 55
+2022-03-31 14:56:06,235 - INFO - Min val Loss: 0.249 in epoch: 45
+2022-03-31 14:56:06,235 - INFO - --------------------------------------------
+2022-03-31 14:56:06,235 - INFO - Epoch [56/100]
+2022-03-31 14:56:15,364 - INFO - val acc: 0.9, val loss 0.272, fps 16118.517
+2022-03-31 14:56:15,367 - INFO - best val Acc: 0.9 in epoch: 55
+2022-03-31 14:56:15,367 - INFO - Min val Loss: 0.249 in epoch: 45
+2022-03-31 14:56:15,367 - INFO - --------------------------------------------
+2022-03-31 14:56:15,367 - INFO - Epoch [57/100]
+2022-03-31 14:56:24,492 - INFO - val acc: 0.88, val loss 0.281, fps 16156.564
+2022-03-31 14:56:24,495 - INFO - best val Acc: 0.9 in epoch: 55
+2022-03-31 14:56:24,495 - INFO - Min val Loss: 0.249 in epoch: 45
+2022-03-31 14:56:24,495 - INFO - --------------------------------------------
+2022-03-31 14:56:24,495 - INFO - Epoch [58/100]
+2022-03-31 14:56:33,840 - INFO - val acc: 0.88, val loss 0.27, fps 16151.535
+2022-03-31 14:56:33,842 - INFO - best val Acc: 0.9 in epoch: 55
+2022-03-31 14:56:33,842 - INFO - Min val Loss: 0.249 in epoch: 45
+2022-03-31 14:56:33,842 - INFO - --------------------------------------------
+2022-03-31 14:56:33,842 - INFO - Epoch [59/100]
+2022-03-31 14:56:42,920 - INFO - val acc: 0.87, val loss 0.271, fps 16168.841
+2022-03-31 14:56:42,923 - INFO - best val Acc: 0.9 in epoch: 55
+2022-03-31 14:56:42,923 - INFO - Min val Loss: 0.249 in epoch: 45
+2022-03-31 14:56:42,923 - INFO - --------------------------------------------
+2022-03-31 14:56:42,923 - INFO - Epoch [60/100]
+2022-03-31 14:56:52,176 - INFO - val acc: 0.88, val loss 0.29, fps 16136.212
+2022-03-31 14:56:52,179 - INFO - best val Acc: 0.9 in epoch: 55
+2022-03-31 14:56:52,179 - INFO - Min val Loss: 0.249 in epoch: 45
+2022-03-31 14:56:52,179 - INFO - --------------------------------------------
+2022-03-31 14:56:52,179 - INFO - Epoch [61/100]
+2022-03-31 14:57:01,256 - INFO - val acc: 0.89, val loss 0.302, fps 16187.781
+2022-03-31 14:57:01,259 - INFO - best val Acc: 0.9 in epoch: 55
+2022-03-31 14:57:01,259 - INFO - Min val Loss: 0.249 in epoch: 45
+2022-03-31 14:57:01,259 - INFO - --------------------------------------------
+2022-03-31 14:57:01,259 - INFO - Epoch [62/100]
+2022-03-31 14:57:10,592 - INFO - val acc: 0.87, val loss 0.311, fps 16096.936
+2022-03-31 14:57:10,596 - INFO - best val Acc: 0.9 in epoch: 55
+2022-03-31 14:57:10,596 - INFO - Min val Loss: 0.249 in epoch: 45
+2022-03-31 14:57:10,596 - INFO - --------------------------------------------
+2022-03-31 14:57:10,596 - INFO - Epoch [63/100]
+2022-03-31 14:57:19,901 - INFO - val acc: 0.89, val loss 0.284, fps 16093.345
+2022-03-31 14:57:19,904 - INFO - best val Acc: 0.9 in epoch: 55
+2022-03-31 14:57:19,904 - INFO - Min val Loss: 0.249 in epoch: 45
+2022-03-31 14:57:19,904 - INFO - --------------------------------------------
+2022-03-31 14:57:19,904 - INFO - Epoch [64/100]
+2022-03-31 14:57:29,139 - INFO - val acc: 0.9, val loss 0.252, fps 16146.715
+2022-03-31 14:57:29,142 - INFO - best val Acc: 0.9 in epoch: 55
+2022-03-31 14:57:29,142 - INFO - Min val Loss: 0.249 in epoch: 45
+2022-03-31 14:57:29,142 - INFO - --------------------------------------------
+2022-03-31 14:57:29,142 - INFO - Epoch [65/100]
+2022-03-31 14:57:38,308 - INFO - val acc: 0.89, val loss 0.242, fps 16150.33
+2022-03-31 14:57:38,336 - INFO - Saved model output/rotation_corrector/mobilenetv3/train_20220331_1447/mobilenetv3-Epoch-65-Loss-0.242-Acc-0.89.pth
+2022-03-31 14:57:38,336 - INFO - best val Acc: 0.9 in epoch: 55
+2022-03-31 14:57:38,336 - INFO - Min val Loss: 0.242 in epoch: 65
+2022-03-31 14:57:38,336 - INFO - --------------------------------------------
+2022-03-31 14:57:38,336 - INFO - Epoch [66/100]
+2022-03-31 14:57:47,542 - INFO - val acc: 0.89, val loss 0.261, fps 16147.971
+2022-03-31 14:57:47,545 - INFO - best val Acc: 0.9 in epoch: 55
+2022-03-31 14:57:47,545 - INFO - Min val Loss: 0.242 in epoch: 65
+2022-03-31 14:57:47,545 - INFO - --------------------------------------------
+2022-03-31 14:57:47,545 - INFO - Epoch [67/100]
+2022-03-31 14:57:57,058 - INFO - val acc: 0.89, val loss 0.274, fps 16190.976
+2022-03-31 14:57:57,061 - INFO - best val Acc: 0.9 in epoch: 55
+2022-03-31 14:57:57,061 - INFO - Min val Loss: 0.242 in epoch: 65
+2022-03-31 14:57:57,061 - INFO - --------------------------------------------
+2022-03-31 14:57:57,061 - INFO - Epoch [68/100]
+2022-03-31 14:58:06,190 - INFO - val acc: 0.89, val loss 0.29, fps 16142.538
+2022-03-31 14:58:06,193 - INFO - best val Acc: 0.9 in epoch: 55
+2022-03-31 14:58:06,193 - INFO - Min val Loss: 0.242 in epoch: 65
+2022-03-31 14:58:06,194 - INFO - --------------------------------------------
+2022-03-31 14:58:06,194 - INFO - Epoch [69/100]
+2022-03-31 14:58:15,311 - INFO - val acc: 0.88, val loss 0.291, fps 16099.127
+2022-03-31 14:58:15,314 - INFO - best val Acc: 0.9 in epoch: 55
+2022-03-31 14:58:15,314 - INFO - Min val Loss: 0.242 in epoch: 65
+2022-03-31 14:58:15,314 - INFO - --------------------------------------------
+2022-03-31 14:58:15,314 - INFO - Epoch [70/100]
+2022-03-31 14:58:24,567 - INFO - val acc: 0.89, val loss 0.272, fps 16133.755
+2022-03-31 14:58:24,571 - INFO - best val Acc: 0.9 in epoch: 55
+2022-03-31 14:58:24,571 - INFO - Min val Loss: 0.242 in epoch: 65
+2022-03-31 14:58:24,571 - INFO - --------------------------------------------
+2022-03-31 14:58:24,571 - INFO - Epoch [71/100]
+2022-03-31 14:58:33,857 - INFO - val acc: 0.89, val loss 0.278, fps 16044.805
+2022-03-31 14:58:33,860 - INFO - best val Acc: 0.9 in epoch: 55
+2022-03-31 14:58:33,860 - INFO - Min val Loss: 0.242 in epoch: 65
+2022-03-31 14:58:33,860 - INFO - --------------------------------------------
+2022-03-31 14:58:33,860 - INFO - Epoch [72/100]
+2022-03-31 14:58:43,148 - INFO - val acc: 0.89, val loss 0.279, fps 16157.924
+2022-03-31 14:58:43,151 - INFO - best val Acc: 0.9 in epoch: 55
+2022-03-31 14:58:43,151 - INFO - Min val Loss: 0.242 in epoch: 65
+2022-03-31 14:58:43,151 - INFO - --------------------------------------------
+2022-03-31 14:58:43,151 - INFO - Epoch [73/100]
+2022-03-31 14:58:52,312 - INFO - val acc: 0.89, val loss 0.259, fps 16087.923
+2022-03-31 14:58:52,315 - INFO - best val Acc: 0.9 in epoch: 55
+2022-03-31 14:58:52,315 - INFO - Min val Loss: 0.242 in epoch: 65
+2022-03-31 14:58:52,315 - INFO - --------------------------------------------
+2022-03-31 14:58:52,315 - INFO - Epoch [74/100]
+2022-03-31 14:59:01,533 - INFO - val acc: 0.88, val loss 0.293, fps 16153.305
+2022-03-31 14:59:01,536 - INFO - best val Acc: 0.9 in epoch: 55
+2022-03-31 14:59:01,536 - INFO - Min val Loss: 0.242 in epoch: 65
+2022-03-31 14:59:01,536 - INFO - --------------------------------------------
+2022-03-31 14:59:01,537 - INFO - Epoch [75/100]
+2022-03-31 14:59:10,800 - INFO - val acc: 0.9, val loss 0.264, fps 16106.623
+2022-03-31 14:59:10,803 - INFO - best val Acc: 0.9 in epoch: 55
+2022-03-31 14:59:10,803 - INFO - Min val Loss: 0.242 in epoch: 65
+2022-03-31 14:59:10,803 - INFO - --------------------------------------------
+2022-03-31 14:59:10,803 - INFO - Epoch [76/100]
+2022-03-31 14:59:20,139 - INFO - val acc: 0.89, val loss 0.261, fps 16142.564
+2022-03-31 14:59:20,142 - INFO - best val Acc: 0.9 in epoch: 55
+2022-03-31 14:59:20,142 - INFO - Min val Loss: 0.242 in epoch: 65
+2022-03-31 14:59:20,142 - INFO - --------------------------------------------
+2022-03-31 14:59:20,142 - INFO - Epoch [77/100]
+2022-03-31 14:59:29,221 - INFO - val acc: 0.9, val loss 0.31, fps 16184.277
+2022-03-31 14:59:29,224 - INFO - best val Acc: 0.9 in epoch: 55
+2022-03-31 14:59:29,224 - INFO - Min val Loss: 0.242 in epoch: 65
+2022-03-31 14:59:29,224 - INFO - --------------------------------------------
+2022-03-31 14:59:29,224 - INFO - Epoch [78/100]
+2022-03-31 14:59:38,274 - INFO - val acc: 0.89, val loss 0.28, fps 16114.661
+2022-03-31 14:59:38,277 - INFO - best val Acc: 0.9 in epoch: 55
+2022-03-31 14:59:38,285 - INFO - Min val Loss: 0.242 in epoch: 65
+2022-03-31 14:59:38,286 - INFO - --------------------------------------------
+2022-03-31 14:59:38,286 - INFO - Epoch [79/100]
+2022-03-31 14:59:47,386 - INFO - val acc: 0.9, val loss 0.268, fps 15879.454
+2022-03-31 14:59:47,389 - INFO - best val Acc: 0.9 in epoch: 55
+2022-03-31 14:59:47,389 - INFO - Min val Loss: 0.242 in epoch: 65
+2022-03-31 14:59:47,389 - INFO - --------------------------------------------
+2022-03-31 14:59:47,390 - INFO - Epoch [80/100]
+2022-03-31 14:59:56,533 - INFO - val acc: 0.88, val loss 0.277, fps 16141.027
+2022-03-31 14:59:56,536 - INFO - best val Acc: 0.9 in epoch: 55
+2022-03-31 14:59:56,536 - INFO - Min val Loss: 0.242 in epoch: 65
+2022-03-31 14:59:56,536 - INFO - --------------------------------------------
+2022-03-31 14:59:56,536 - INFO - Epoch [81/100]
+2022-03-31 15:00:05,798 - INFO - val acc: 0.89, val loss 0.295, fps 16170.152
+2022-03-31 15:00:05,801 - INFO - best val Acc: 0.9 in epoch: 55
+2022-03-31 15:00:05,801 - INFO - Min val Loss: 0.242 in epoch: 65
+2022-03-31 15:00:05,801 - INFO - --------------------------------------------
+2022-03-31 15:00:05,801 - INFO - Epoch [82/100]
+2022-03-31 15:00:14,959 - INFO - val acc: 0.89, val loss 0.313, fps 15954.954
+2022-03-31 15:00:14,967 - INFO - best val Acc: 0.9 in epoch: 55
+2022-03-31 15:00:14,967 - INFO - Min val Loss: 0.242 in epoch: 65
+2022-03-31 15:00:14,967 - INFO - --------------------------------------------
+2022-03-31 15:00:14,967 - INFO - Epoch [83/100]
+2022-03-31 15:00:24,021 - INFO - val acc: 0.91, val loss 0.28, fps 16062.593
+2022-03-31 15:00:24,048 - INFO - Saved model output/rotation_corrector/mobilenetv3/train_20220331_1447/mobilenetv3-Epoch-83-Loss-0.28-Acc-0.91.pth
+2022-03-31 15:00:24,048 - INFO - best val Acc: 0.91 in epoch: 83
+2022-03-31 15:00:24,048 - INFO - Min val Loss: 0.242 in epoch: 65
+2022-03-31 15:00:24,048 - INFO - --------------------------------------------
+2022-03-31 15:00:24,048 - INFO - Epoch [84/100]
+2022-03-31 15:00:33,107 - INFO - val acc: 0.88, val loss 0.336, fps 16145.049
+2022-03-31 15:00:33,110 - INFO - best val Acc: 0.91 in epoch: 83
+2022-03-31 15:00:33,110 - INFO - Min val Loss: 0.242 in epoch: 65
+2022-03-31 15:00:33,110 - INFO - --------------------------------------------
+2022-03-31 15:00:33,110 - INFO - Epoch [85/100]
+2022-03-31 15:00:42,138 - INFO - val acc: 0.9, val loss 0.274, fps 16167.402
+2022-03-31 15:00:42,141 - INFO - best val Acc: 0.91 in epoch: 83
+2022-03-31 15:00:42,141 - INFO - Min val Loss: 0.242 in epoch: 65
+2022-03-31 15:00:42,141 - INFO - --------------------------------------------
+2022-03-31 15:00:42,141 - INFO - Epoch [86/100]
+2022-03-31 15:00:51,277 - INFO - val acc: 0.89, val loss 0.28, fps 16161.75
+2022-03-31 15:00:51,280 - INFO - best val Acc: 0.91 in epoch: 83
+2022-03-31 15:00:51,280 - INFO - Min val Loss: 0.242 in epoch: 65
+2022-03-31 15:00:51,280 - INFO - --------------------------------------------
+2022-03-31 15:00:51,280 - INFO - Epoch [87/100]
+2022-03-31 15:01:00,421 - INFO - val acc: 0.88, val loss 0.3, fps 16181.909
+2022-03-31 15:01:00,424 - INFO - best val Acc: 0.91 in epoch: 83
+2022-03-31 15:01:00,424 - INFO - Min val Loss: 0.242 in epoch: 65
+2022-03-31 15:01:00,424 - INFO - --------------------------------------------
+2022-03-31 15:01:00,424 - INFO - Epoch [88/100]
+2022-03-31 15:01:09,521 - INFO - val acc: 0.9, val loss 0.303, fps 16075.286
+2022-03-31 15:01:09,525 - INFO - best val Acc: 0.91 in epoch: 83
+2022-03-31 15:01:09,525 - INFO - Min val Loss: 0.242 in epoch: 65
+2022-03-31 15:01:09,525 - INFO - --------------------------------------------
+2022-03-31 15:01:09,525 - INFO - Epoch [89/100]
+2022-03-31 15:01:18,707 - INFO - val acc: 0.89, val loss 0.26, fps 16153.818
+2022-03-31 15:01:18,710 - INFO - best val Acc: 0.91 in epoch: 83
+2022-03-31 15:01:18,710 - INFO - Min val Loss: 0.242 in epoch: 65
+2022-03-31 15:01:18,710 - INFO - --------------------------------------------
+2022-03-31 15:01:18,710 - INFO - Epoch [90/100]
+2022-03-31 15:01:27,853 - INFO - val acc: 0.9, val loss 0.267, fps 16144.408
+2022-03-31 15:01:27,856 - INFO - best val Acc: 0.91 in epoch: 83
+2022-03-31 15:01:27,856 - INFO - Min val Loss: 0.242 in epoch: 65
+2022-03-31 15:01:27,856 - INFO - --------------------------------------------
+2022-03-31 15:01:27,856 - INFO - Epoch [91/100]
+2022-03-31 15:01:37,001 - INFO - val acc: 0.89, val loss 0.285, fps 16154.614
+2022-03-31 15:01:37,004 - INFO - best val Acc: 0.91 in epoch: 83
+2022-03-31 15:01:37,004 - INFO - Min val Loss: 0.242 in epoch: 65
+2022-03-31 15:01:37,004 - INFO - --------------------------------------------
+2022-03-31 15:01:37,004 - INFO - Epoch [92/100]
+2022-03-31 15:01:46,237 - INFO - val acc: 0.9, val loss 0.297, fps 16117.776
+2022-03-31 15:01:46,240 - INFO - best val Acc: 0.91 in epoch: 83
+2022-03-31 15:01:46,240 - INFO - Min val Loss: 0.242 in epoch: 65
+2022-03-31 15:01:46,240 - INFO - --------------------------------------------
+2022-03-31 15:01:46,240 - INFO - Epoch [93/100]
+2022-03-31 15:01:55,722 - INFO - val acc: 0.89, val loss 0.274, fps 16101.701
+2022-03-31 15:01:55,725 - INFO - best val Acc: 0.91 in epoch: 83
+2022-03-31 15:01:55,725 - INFO - Min val Loss: 0.242 in epoch: 65
+2022-03-31 15:01:55,725 - INFO - --------------------------------------------
+2022-03-31 15:01:55,725 - INFO - Epoch [94/100]
+2022-03-31 15:02:04,783 - INFO - val acc: 0.89, val loss 0.274, fps 16143.435
+2022-03-31 15:02:04,786 - INFO - best val Acc: 0.91 in epoch: 83
+2022-03-31 15:02:04,786 - INFO - Min val Loss: 0.242 in epoch: 65
+2022-03-31 15:02:04,786 - INFO - --------------------------------------------
+2022-03-31 15:02:04,786 - INFO - Epoch [95/100]
+2022-03-31 15:02:13,847 - INFO - val acc: 0.89, val loss 0.357, fps 16058.079
+2022-03-31 15:02:13,850 - INFO - best val Acc: 0.91 in epoch: 83
+2022-03-31 15:02:13,850 - INFO - Min val Loss: 0.242 in epoch: 65
+2022-03-31 15:02:13,850 - INFO - --------------------------------------------
+2022-03-31 15:02:13,850 - INFO - Epoch [96/100]
+2022-03-31 15:02:22,986 - INFO - val acc: 0.89, val loss 0.324, fps 16124.011
+2022-03-31 15:02:22,990 - INFO - best val Acc: 0.91 in epoch: 83
+2022-03-31 15:02:22,990 - INFO - Min val Loss: 0.242 in epoch: 65
+2022-03-31 15:02:22,990 - INFO - --------------------------------------------
+2022-03-31 15:02:22,990 - INFO - Epoch [97/100]
+2022-03-31 15:02:32,282 - INFO - val acc: 0.89, val loss 0.303, fps 16179.901
+2022-03-31 15:02:32,285 - INFO - best val Acc: 0.91 in epoch: 83
+2022-03-31 15:02:32,285 - INFO - Min val Loss: 0.242 in epoch: 65
+2022-03-31 15:02:32,285 - INFO - --------------------------------------------
+2022-03-31 15:02:32,285 - INFO - Epoch [98/100]
+2022-03-31 15:02:41,354 - INFO - val acc: 0.9, val loss 0.268, fps 16062.593
+2022-03-31 15:02:41,357 - INFO - best val Acc: 0.91 in epoch: 83
+2022-03-31 15:02:41,357 - INFO - Min val Loss: 0.242 in epoch: 65
+2022-03-31 15:02:41,357 - INFO - --------------------------------------------
+2022-03-31 15:02:41,357 - INFO - Epoch [99/100]
+2022-03-31 15:02:50,566 - INFO - val acc: 0.88, val loss 0.288, fps 16132.962
+2022-03-31 15:02:50,570 - INFO - best val Acc: 0.91 in epoch: 83
+2022-03-31 15:02:50,570 - INFO - Min val Loss: 0.242 in epoch: 65
+2022-03-31 15:02:50,570 - INFO - --------------------------------------------
